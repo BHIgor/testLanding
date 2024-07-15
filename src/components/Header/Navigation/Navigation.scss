@@ -1,0 +1,127 @@
+@import './../../../utils/mixin.scss';
+@import './../../../utils/variables.scss';
+
+.navigation {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+
+  @include mainFont();
+
+  &__logo {
+    display: flex;
+    gap: 9px;
+    align-items: center;
+    height: 58px;
+    line-height: 58px;
+
+    &--text {
+      color: white;
+      font-size: 32px;
+      line-height: 38.4px;
+      padding: 10px;
+    }
+
+    &--lang {
+      font-size: 18px;
+      line-height: 21.6px;
+      color: white;
+      cursor: pointer;
+
+      @include onNotebook {
+        display: none;
+      }
+
+    }
+
+    &--langColor {
+      color: gray;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    gap: 30px;
+
+    @include onNotebook {
+      display: none;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    @include mainFont();
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+
+    @include onNotebook {
+      display: none;
+    }
+
+    &--enter{
+      color: white;
+      text-decoration: none;
+    }
+    &--reg {
+      background-color: $button-color;
+      height: 50px;
+      width: 147px;
+      border-radius: 10px;
+      line-height: 50px;
+      font-size: 12px;
+      text-transform: uppercase;
+      color: white;
+      text-decoration: none;
+
+    }
+  }
+
+  &__menu {
+    height: 30px;
+    width: 43px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+    display: none;
+
+    @include onNotebook {
+      display: flex;
+    }
+
+    &--line{      
+      height: 2.86px;
+      border-radius: 2.86px;
+      background-color: white;
+      position: relative;
+    }
+
+    &--middleLine {
+      width: 32.86px;
+      left: 2.86px;
+    }
+
+    &--topLine {
+      width: 17.14px;
+      left: 18.57px;
+      text-align: left;
+    }
+
+    &--bottomLine {
+      width: 15.71px;
+      left: 2.86px;
+    }
+  }
+}

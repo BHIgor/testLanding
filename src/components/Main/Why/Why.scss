@@ -1,0 +1,139 @@
+@import './../../../utils/mixin.scss';
+@import './../../../utils/variables.scss';
+
+.why{
+  height: 520px;
+  margin-top: -15px;
+  display: flex;
+  gap: 60px;
+
+  @include onNotebook{
+    height: 900px;
+    margin-top: -230px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0px;
+
+  }
+
+  &__image{
+    height: 416px;
+    display: block;
+
+    @include onNotebook{
+      display: none;
+    }
+
+    @include onPhoneMax{
+      height: 333px;
+    }
+
+    @include onPhoneMin{
+      height: 238px;
+    }
+  }
+
+  &__info{
+    display: flex;
+    flex-direction: column;
+
+    @include onNotebook{
+     width: 611px;
+    }
+
+    @include onPhoneMax{
+      margin-top: 20px;
+      width: 440px;
+    }
+    
+    @include onPhoneMin{
+      margin-top: 20px;
+      width: 440px;
+    }
+
+    
+    &--title{
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      color: $text-color;
+      margin-bottom: 10px;
+
+      @include onPhoneMin{
+        font-size: 14px;
+      }
+    }
+
+    &--subTitle{
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 36px;
+      margin-bottom: 20px;
+
+      @include onPhoneMax{
+        font-size: 24px;
+      }
+
+      @include onPhoneMin{
+        font-size: 16px;
+      }
+    }
+
+    &--text{
+      color: #333333;
+      font-family: "Open Sans", sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 40px;
+
+      @include onPhoneMin{
+        font-size: 14px;
+      }
+    }
+
+  }
+
+  &__block{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    column-gap: 10px;
+  }
+  &__button{
+    width: 245px;
+    height: 40px;
+    display: flex;
+    padding-left: 14px;
+    gap: 8px;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    
+
+    &--icon{
+      background-image: url(./../../../images/iconStaff.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 14px;
+      width: 17px;
+    }
+
+    &--text{
+      font-size: 15px;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+      line-height: 22px;
+      color: #333333;
+    }
+  }
+
+  &__display{
+    display: none;
+
+    @include onNotebook{
+      display: block;
+    }
+  }
+}
+

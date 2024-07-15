@@ -1,0 +1,143 @@
+@import './../../../utils/mixin.scss';
+@import './../../../utils/variables.scss';
+
+.about{
+  background-image: url(./../../../images/secondMainVector.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 673px;
+  margin-top: -15px;
+  display: flex;
+  gap: 95px;
+
+  @include onNotebook{
+    height: 1290px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0px;
+    padding-bottom: 140px;
+    margin-top: -200px;
+  }
+
+  &__image{
+    height: 416px;
+    display: block;
+
+    @include onPhoneMax{
+      height: 333px;
+    }
+
+    @include onPhoneMin{
+      height: 238px;
+    }
+  }
+
+  &__info{
+    display: flex;
+    flex-direction: column;
+
+
+    @include onNotebook{
+     margin-top: -220px;
+     width: 550px;
+    }
+
+    @include onPhoneMax{
+      width: 440px;
+    }
+
+    
+    &--title{
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-size: 18px;
+      color: $text-color;
+      margin-bottom: 10px;
+
+      @include onPhoneMin{
+        font-size: 14px;
+      }
+    }
+
+    &--subTitle{
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 36px;
+      margin-bottom: 20px;
+
+      @include onPhoneMax{
+        font-size: 24px;
+      }
+
+      @include onPhoneMin{
+        font-size: 16px;
+      }
+    }
+
+    &--text{
+      color: #333333;
+      font-family: "Open Sans", sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 25px;
+
+      @include onPhoneMin{
+        font-size: 14px;
+      }
+    }
+
+  }
+
+  &__statistic{
+
+    &--titleBlock{
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+    }
+
+    &--subTitle{
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    &--procent{
+      font-family: "Open Sans", sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      color: $text-color;
+    }
+
+    &--input{
+      -webkit-appearance: none;
+      appearance: none;
+      width: 100%;
+      height: 7px;
+      outline: none;
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+      pointer-events: none; 
+      margin-bottom: 17px;
+
+    }
+
+    &--input1{
+      background: linear-gradient(to right, #1074D8 90%, #d3d3d3 90%);
+    }
+
+    &--input2{
+      background: linear-gradient(to right, #1074D8 85%, #d3d3d3 85%);
+    }
+
+    &--input3{
+      background: linear-gradient(to right, #1074D8 70%, #d3d3d3 70%);
+    }
+
+    &--input4{
+      background: linear-gradient(to right, #1074D8 40%, #d3d3d3 40%);
+    }
+  }
+}

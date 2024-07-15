@@ -1,0 +1,70 @@
+@import './variables.scss';
+
+@mixin onDesktop {
+  @media (max-width: $desktop-min-width) {
+    @content;
+  }
+}
+
+@mixin onNotebook {
+  @media (max-width: $notebook-min-width) {
+    @content;
+  }
+}
+
+@mixin onTablet {
+  @media (max-width: $tablet-min-width) {
+    @content;
+  }
+}
+
+@mixin onPhoneMax {
+  @media (max-width: $phoneMax-min-width) {
+    @content;
+  }
+}
+
+@mixin onPhoneMin {
+  @media (max-width: $phoneMin-min-width) {
+    @content;
+  }
+}
+
+
+@font-face {
+  font-family: 'LatoLight';
+  src: url('./../utils/fonts/Lato-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LatoReg';
+  src: url('./../utils/fonts/Lato-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LatoBold';
+  src: url('./../utils/fonts/Lato-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+@mixin mainFont {
+  font-family: "LatoReg", sans-serif;
+  font-weight: 400;
+}
+
+@mixin boldFont {
+  font-family: "Lato", sans-serif !important;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@mixin lightFont {
+  font-family: "LatoLight", sans-serif !important;
+  font-weight: 300 !important;
+}

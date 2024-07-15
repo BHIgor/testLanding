@@ -1,0 +1,152 @@
+@import './../../../utils/mixin.scss';
+@import './../../../utils/variables.scss';
+
+.exprnc {
+  background-image: url(./../../../images/sixYears.svg);
+  height: 605px;
+  display: flex;
+  flex-direction: column;
+  gap: 118px;
+  padding-top: 168px;
+  text-align: center;
+  align-items: center;
+
+  @include onNotebook {
+    gap: 98px;
+  }
+
+  @include onPhoneMax {
+    margin-top: 200px;
+    gap: 66px;
+  }
+
+  @include onPhoneMin {
+    margin-top: 60px;
+    padding-top: 95px;
+  }
+
+  &__title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    color: $text-color;
+
+    @include onPhoneMax {
+      font-size: 24px;
+      line-height: 36px;
+    }
+  
+    @include onPhoneMin {
+      font-size: 18px;
+      line-height: 36px;
+    }
+  }
+
+  &__block {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+
+    
+    @include onPhoneMax {
+      width: 204px;
+    }
+  
+
+    @include onNotebook {
+
+      &:last-child {
+        margin-left: -20px;
+      }
+    }
+    @include onPhoneMax {
+      &:last-child {
+        margin-left: 0px;
+      }
+    }
+    
+  
+
+    &--icon {
+      height: 54px;
+      width: 54px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--iconYears {
+      background-image: url(./../../../images/yearsIcon.svg);
+    }
+
+    &--iconProject {
+      background-image: url(./../../../images/projectIcon.svg);
+    }
+
+    &--iconSmile {
+      background-image: url(./../../../images/smileIcon.svg);
+    }
+
+    &--iconStaff {
+      background-image: url(./../../../images/staffIcon.svg);
+    }
+  }
+
+  &__flex {
+    display: flex;
+    gap: 88px;
+    flex-wrap: wrap;
+    align-items: center;
+
+
+    @include onNotebook {
+      width: 562px;
+    }
+    @include onPhoneMax {
+      column-gap: 25px;
+      row-gap: 60px;
+      width: 100%;
+    }
+  
+    @include onPhoneMin {
+      gap: 40px;
+      justify-content: center;
+     
+    }
+  }
+
+  &__textBlock {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+
+    &--title {
+      font-family: "Poppins", sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 24px;
+      color: $text-color;
+    }
+
+    &--text {
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+      color: $text-color;
+
+      @include onPhoneMax {
+        column-gap: 25px;
+        row-gap: 60px;
+        width: 100%;
+        display: inline-block; /* Блочно-строчный элемент */
+        white-space: normal;
+      }
+    
+      @include onPhoneMin {
+        font-size: 14px;
+        line-height: 16px;
+      }
+
+    }
+  }
+}

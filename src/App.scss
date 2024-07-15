@@ -1,0 +1,21 @@
+@import './utils/mixin.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  padding: 0 120px;
+
+  @include onDesktop {
+    padding: 0 120px;
+  }
+
+  @include onNotebook {
+    padding: 0 20px;
+  }
+
+  
+}

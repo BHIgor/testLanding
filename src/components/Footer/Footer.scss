@@ -1,0 +1,202 @@
+@import './../../utils/mixin.scss';
+@import './../../utils/variables.scss';
+
+.footer {
+  background-image: url(../../images/footerVector.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 764px;
+  padding-top: 121px;
+  padding-bottom: 104px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 147px;
+
+
+
+  @include onNotebook {
+    height: 1225px;
+    gap: 60px;
+    padding-top: 35px;
+    background-image: url(../../images/footerVector960.svg);
+  }
+
+  @include onPhoneMax {
+    height: 1100px;
+  }
+  
+  @include onPhoneMin {
+    height: 1135px;
+  }
+
+  &__image{
+
+    @include onPhoneMin{
+      width: 320px;
+    }
+
+    @include onPhoneMax{
+      width: 365px;
+    }
+  }
+
+  &__footerText {
+    color: #ffffff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    text-align: center;
+    padding: 24px 0;
+  }
+
+  &__block1 {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+
+    @include onNotebook {
+      margin-top: 10px;
+    }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  &__title {
+    margin-bottom: 46px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    color: white;
+
+    @include onPhoneMin{
+      font-size: 16px;
+      line-height: 36px;
+    }
+
+    @include onPhoneMax{
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
+
+  &__subTitle {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    color: white;
+
+    @include onPhoneMin{
+      font-size: 14px;
+    }
+
+  }
+
+  &__input {
+    width: 270px;
+    padding: 5px 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 36px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    outline: none;
+  }
+
+  &__captcha {
+    width: 300px;
+    height: 80px;
+    gap: 0px;
+    border: 1px solid #D3D3D3;
+    background-color: #F9F9F9;
+    display: flex;
+    gap: 22px;
+    align-items: center;
+
+    &--checkbox {
+      height: 28px;
+      width: 28px;
+      border-radius: 2px;
+      border: 2px solid #C1C1C1;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    &--text {
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+    }
+
+    &--iconBlock {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+      margin-left: 40px;
+    }
+
+    &--icon {
+      height: 32px;
+      width: 32px;
+      margin-left: 10px;
+      margin-bottom: 2px;
+
+    }
+
+    &--iconText {
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 10px;
+      color: #555555;
+    }
+  }
+
+  &__button {
+    width: 180px;
+    height: 45px;
+    background-color: $text-color;
+    border-radius: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    line-height: 15px;
+    font-weight: 400;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+  }
+
+  &__footerText{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 75px;
+    display: none;
+
+    @include onNotebook {
+      display: inline-block;
+    }
+
+    @include onPhoneMax {
+      font-size: 14px;
+    }
+    
+    @include onPhoneMin {
+      font-size: 11px;
+    }
+  }
+}

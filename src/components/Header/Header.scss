@@ -1,0 +1,141 @@
+@import './../../utils/mixin.scss';
+@import './../../utils/variables.scss';
+
+.header{
+  background-image: url(../../images/Vector.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 740px;
+  margin-bottom: 25px;
+
+  @include onNotebook {
+    background-image: url(../../images/Vector960.svg);
+    height: 584px;
+  }
+
+  @include onTablet {
+    background-image: url(../../images/Vector768.svg);
+  }
+
+  @include onPhoneMax {
+    background-image: url(../../images/Vector480.svg);
+  }
+
+  @include onPhoneMin {
+    background-image: url(../../images/Vector360.svg);
+  }
+
+  &__block{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 803px;
+    height: 450px;
+
+    @include onNotebook {
+      width: 637px;
+      height: 320px;
+    }
+    @include onTablet {
+      width: 637px;
+     }
+
+    @include onPhoneMax {
+      width: 440px;
+      height: 248px;
+    }
+    @include onPhoneMin {
+      width: 340px;
+      height: 248px;
+    }
+
+
+  }
+
+  &__title{
+
+    @include boldFont();
+    font-weight: 800;
+    color: white;
+    font-size: 48px;
+
+    &--underline{
+      text-decoration: underline;
+    }
+    @include onNotebook {
+     font-size: 36px;
+    }
+
+
+    @include onPhoneMax {
+      font-size: 24px;
+    }
+    @include onPhoneMin {
+      font-size: 16px;
+    }
+  }
+
+  &__subTitle{
+
+    @include lightFont();
+    color: white;
+    font-size: 36px;
+    width: 590px;
+
+    @include onNotebook {
+      font-size: 24px;
+      width: 575px;
+     }
+
+     @include onPhoneMax {
+       font-size: 16px;
+       width: 440px;
+     }
+     @include onPhoneMin {
+       font-size: 14px;
+       width: 320px;
+     }
+  }
+
+  &__button{
+    text-transform: uppercase;
+    @include mainFont();
+    border: none;
+    color: white;
+    font-size: 12px;
+    background-color: $button-color;
+    padding: 18px 30px 18px 30px;
+    width: 176px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+
+  &__container{
+    position: relative;
+    height: 650px;
+  }
+
+  &__photo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 656px;
+
+    @include onNotebook {
+      height: 455px;
+      bottom: 170px;
+     }
+
+     @include onTablet {
+      height: 324px;
+      bottom: 160px;
+     }
+ 
+     @include onPhoneMax {
+      height: 246px;
+      bottom: 230px;
+     }
+    
+  }
+}
+
