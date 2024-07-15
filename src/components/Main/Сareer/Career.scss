@@ -10,6 +10,15 @@
 
   @include onNotebook {
     margin-bottom: 60px;
+    margin-top: 50px;
+  }
+
+  @include onPhoneMax{
+    margin-top: 185px;
+  }
+
+  @include onPhoneMin{
+    margin-top: 50px;
   }
 
   &__title {

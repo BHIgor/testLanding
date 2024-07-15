@@ -29,23 +29,23 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
-    width: 803px;
+
     height: 450px;
 
     @include onNotebook {
-      width: 637px;
+
       height: 320px;
     }
     @include onTablet {
-      width: 637px;
+
      }
 
     @include onPhoneMax {
-      width: 440px;
-      height: 248px;
+      width: 40px;
+
     }
     @include onPhoneMin {
-      width: 340px;
+
       height: 248px;
     }
 
@@ -58,6 +58,7 @@
     font-weight: 800;
     color: white;
     font-size: 48px;
+    display: inline-block;
 
     &--underline{
       text-decoration: underline;
@@ -69,9 +70,11 @@
 
     @include onPhoneMax {
       font-size: 24px;
+      width: 300px;
     }
     @include onPhoneMin {
       font-size: 16px;
+      width: 300px;
     }
   }
 
@@ -81,19 +84,21 @@
     color: white;
     font-size: 36px;
     width: 590px;
+    display: inline-block;
 
     @include onNotebook {
       font-size: 24px;
-      width: 575px;
+
      }
 
      @include onPhoneMax {
        font-size: 16px;
-       width: 440px;
+       width: 300px;
+
      }
      @include onPhoneMin {
        font-size: 14px;
-       width: 320px;
+  
      }
   }
 

@@ -31,14 +31,15 @@
   }
 
   &__image{
-
+    @include onPhoneMax{
+      width: 320px;
+    }
+    
     @include onPhoneMin{
       width: 320px;
     }
 
-    @include onPhoneMax{
-      width: 365px;
-    }
+ 
   }
 
   &__footerText {
