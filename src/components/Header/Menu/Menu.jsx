@@ -7,7 +7,7 @@ export const Menu = () => {
   return <>
     <aside className="menu page__menu" id="menu">
       <div className="container menu__container">
-        <a href="#" className="menu__icons menu__icons--close"></a>
+        <a href="/" className="menu__icons menu__icons--close">.</a>
 
 
         <nav className="menu__nav">
