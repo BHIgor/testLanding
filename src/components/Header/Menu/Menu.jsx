@@ -12,17 +12,17 @@ export const Menu = () => {
 
         <nav className="menu__nav">
           <a className="menu__link" href="#help">
-            Помощь
+            Про нас
           </a>
           <a className="menu__link" href="#blog">
-            Блог
+            Тарифи
           </a>
           <a className="menu__link" href="#learn">
-            Обучение
+            Переваги
           </a>
-          <a className="menu__link" href="#catalog">
-            Каталог блогеров
-          </a>
+          <a className="menu__link" href="https://t.me/tgBazarNews">
+          Telegram канал
+        </a>
         </nav>
 
       </div>

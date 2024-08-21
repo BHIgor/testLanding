@@ -1,6 +1,6 @@
 .menu {
   height: 100%;
-  background-color: #C2C2C2;
+  background-color: #fefefe;
 
   &__logo {
     display: block;
@@ -14,7 +14,13 @@
     }
   }
 
-
+  &__link{
+    font-family: "LatoReg", sans-serif;
+    color: black;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+  }
   &__icons {
     display: block;
     height: 54px;
@@ -45,10 +51,11 @@
   }
 
     &--link {
-      font-weight: 700;
+      font-weight: bold;
       font-size: 16px;
       line-height: 27px;
-      text-decoration: none;
+ 
+      
     }
 
     &--link:last-child {

@@ -5,72 +5,68 @@ import './About.scss';
 export const About = () => {
 
   return <>
-    <div className="container about">
+    <div className="container about" id='learn'>
       <img src={aboutPhoto} alt="Фото" className="about__image" />
       <div className="about__info">
         <span className="about__info--title">
-          О нашей компании
+          Які наші переваги?
         </span>
 
         <span className="about__info--subTitle">
-          Наша задача – Обеспечить бизнес грамотной системой маркетинга
+          Наше завдання підвищити кількість ваших продажів.
         </span>
 
         <span className="about__info--text">
-          Компания Skyweb предоставляет услуги профессиональных интернет маркетологов клиентам по всему миру. Среди наиболее востребованных услуг, нацеленных на развитие бизнеса, находятся следующие:
+          Ми пропонуємо Вам:
         </span>
 
         <div className="about__statistic">
           <div className="about__statistic--titleBlock">
-            <span className="about__statistic--subTitle">
-              Веб разработка
-            </span>
+            <div className="about__statistic--subTitleText">
+              <span className="about__statistic--subTitle">Унікальний дизайн</span> - ви самі обираєте кольорову гамму, та розділи які відображати у Вашому магазині. Сам магазин відкривається у браузері та виглядає як професійний магазин такі як rozetka, citrus, allo та інші. (Дивіться демо магазину)
+               
+            </div>
 
-            <span className="about__statistic--procent">
-              90%
-            </span>
+
           </div>
 
-          <input type="range" min="0" max="100" defaultValue="90" className="about__statistic--input about__statistic--input1" />
 
           <div className="about__statistic--titleBlock">
-            <span className="about__statistic--subTitle">
-              SEO Оптимизация
-            </span>
+          <div className="about__statistic--subTitleText">
+              <span className="about__statistic--subTitle">Вартість</span> - ціна значно нижча ніж в схожих конструкторах
+               
+            </div>
 
-            <span className="about__statistic--procent">
-              85%
-            </span>
           </div>
-
-          <input type="range" min="0" max="100" defaultValue="85" className="about__statistic--input about__statistic--input2" />
 
           <div className="about__statistic--titleBlock">
-            <span className="about__statistic--subTitle">
-              Интернет Маркетинг
-            </span>
+          <div className="about__statistic--subTitleText">
+              <span className="about__statistic--subTitle">Підвищення продаж</span> - ваші товари можуть показуватись не тільки у вашому магазині, а ще і в інших які створили на платформі TG Bazar.
+               
+            </div>
 
-            <span className="about__statistic--procent">
-              70%
-            </span>
           </div>
 
-          <input type="range" min="0" max="100" defaultValue="70" className="about__statistic--input about__statistic--input3" />
 
           <div className="about__statistic--titleBlock">
-            <span className="about__statistic--subTitle">
-              Мобильная разработка
-            </span>
+          <div className="about__statistic--subTitleText">
+              <span className="about__statistic--subTitle">Функціональність</span> - клієнти можуть ділитись вашими товарами прямо в telegram. Слідкувати за статусом замовленням, ви в свою чергу цим статусом можете керувати, та ще багато іншого.
+               
+            </div>
 
-            <span className="about__statistic--procent">
-              40%
-            </span>
           </div>
 
-          <input type="range" min="0" max="100" defaultValue="40" className="about__statistic--input about__statistic--input4" />
+          <div className="about__statistic--titleBlock">
+          <div className="about__statistic--subTitleText">
+              <span className="about__statistic--subTitle">Зручність</span> - все реалізовано в інтерфейсі telegram, ви можете редагувати, додавати чи видаляти товари прямо зі свого смартфона. Керувати замовленнями та підтримувати зв'язок зі своїми клієнтами.
+               
+            </div>
+
+          </div>
 
 
-          
+
+
         </div>
       </div>
     </div>

@@ -2,27 +2,28 @@
 @import './../../../utils/variables.scss';
 
 .exprnc {
-  background-image: url(./../../../images/sixYears.svg);
-  height: 605px;
+  height: 650px;
   display: flex;
   flex-direction: column;
-  gap: 118px;
-  padding-top: 168px;
+  gap: 20px;
   text-align: center;
   align-items: center;
 
-  @include onNotebook {
-    gap: 98px;
+
+  @include onTablet {
+
+    margin-top: 50px;
   }
 
   @include onPhoneMax {
-    margin-top: 200px;
+    margin-top: 350px;
     gap: 66px;
+    height: 1100px;
   }
 
   @include onPhoneMin {
-    margin-top: 60px;
-    padding-top: 95px;
+    margin-top: 450px;
+  
   }
 
   &__title {
@@ -42,111 +43,42 @@
     }
   }
 
-  &__block {
-    display: flex;
-    gap: 15px;
-    align-items: center;
-
-    
-    @include onPhoneMax {
-      width: 204px;
-    }
-  
-
-    @include onNotebook {
-
-      &:last-child {
-        margin-left: -20px;
-      }
-    }
-    @include onPhoneMax {
-      &:last-child {
-        margin-left: 0px;
-      }
-    }
-    
-  
-
-    &--icon {
-      height: 54px;
-      width: 54px;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-
-    &--iconYears {
-      background-image: url(./../../../images/yearsIcon.svg);
-    }
-
-    &--iconProject {
-      background-image: url(./../../../images/projectIcon.svg);
-    }
-
-    &--iconSmile {
-      background-image: url(./../../../images/smileIcon.svg);
-    }
-
-    &--iconStaff {
-      background-image: url(./../../../images/staffIcon.svg);
-    }
+  &__subTitle{
+    @include lightFont();
+    font-size: 16px;
   }
 
-  &__flex {
+  &__table{
+    @include lightFont();
+    font-size: 16px;
     display: flex;
-    gap: 88px;
-    flex-wrap: wrap;
-    align-items: center;
-
-
-    @include onNotebook {
-      width: 562px;
-    }
-    @include onPhoneMax {
-      column-gap: 25px;
-      row-gap: 60px;
-      width: 100%;
-    }
-  
-    @include onPhoneMin {
-      gap: 40px;
-      justify-content: center;
-     
-    }
-  }
-
-  &__textBlock {
+    flex-direction: column;
+    gap: 5px;
     text-align: left;
+    background-color: rgb(241, 252, 253);
+    color: rgb(94, 94, 94);
+    padding: 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+  }
+
+  &__price{
+    @include mainFont();
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  &__priceBlock{
+    @include lightFont();
+    font-weight: bold;
+    text-align: left;
+    width: 200px;
     display: flex;
     flex-direction: column;
 
-    &--title {
-      font-family: "Poppins", sans-serif;
-      font-weight: 700;
-      font-size: 24px;
-      line-height: 24px;
-      color: $text-color;
-    }
-
-    &--text {
-      font-family: "Poppins", sans-serif;
-      font-weight: 500;
-      font-size: 16px;
-      color: $text-color;
-
-      @include onPhoneMax {
-        column-gap: 25px;
-        row-gap: 60px;
-        width: 100%;
-        display: inline-block; /* Блочно-строчный элемент */
-        white-space: normal;
-      }
-    
-      @include onPhoneMin {
-        font-size: 14px;
-        line-height: 16px;
-      }
-
+    &--item{
+      @include lightFont();
+      font-weight: bold;
     }
   }
 }

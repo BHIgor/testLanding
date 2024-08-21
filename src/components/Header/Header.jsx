@@ -1,5 +1,5 @@
 import { Navigation } from './Navigation/Navigation';
-import headerPhoto from './../../images/headerPhoto.png'
+import headerPhoto from './../../images/Vector.png'
 
 import './Header.scss';
 
@@ -13,16 +13,23 @@ export const Header = () => {
         <div className="header__container">
           <div className="header__block">
             <span className="header__title">
-              EPICSTARS — платформа, объединяющая <span className='header__title--underline'>рекламодателей</span> и <span className='header__title--underline'>блогеров</span>
+              TG Bazar — конструктор інтернет-магазинів в telegram
             </span>
 
             <span className="header__subTitle">
-              Помогаем брендам и компаниям транслировать свои маркетинговые активности через лидеров мнений и блогеров
+              Створи власний інтернет-магазин в telegram за 5 хвилин.
             </span>
 
-            <button className='header__button'>
-              Давайте начнем!
-            </button>   
+            <div className="header__flex">
+              <button className='header__button'>
+                <a href='https://t.me/tgBazarShop_bot' className='silkaWhite'>Створити магазин</a>
+              </button>
+
+              <button className='header__buttonDemo'>
+                <a href='https://t.me/demoTgBazar_bot' className='silka'>Демо бот-магазин</a>
+              </button>
+            </div>
+
           </div>
 
           <img src={headerPhoto} alt="Фото" className='header__photo' />
