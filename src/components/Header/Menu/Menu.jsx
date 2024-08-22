@@ -23,6 +23,9 @@ export const Menu = () => {
           <a className="menu__link" href="https://t.me/tgBazarNews">
           Telegram канал
         </a>
+        <a className="menu__link" href="https://www.instagram.com/tgbazarshop/">
+        Instagram
+        </a>
         </nav>
 
       </div>

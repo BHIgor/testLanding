@@ -28,6 +28,9 @@ export const Navigation = () => {
         <a className="navigation__link" href="https://t.me/tgBazarNews">
           Telegram канал
         </a>
+        <a className="navigation__link" href="https://www.instagram.com/tgbazarshop/">
+          Instagram
+        </a>
       </nav>
 
       <div className="navigation__button">
